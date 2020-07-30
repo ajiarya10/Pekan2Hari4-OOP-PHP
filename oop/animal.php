@@ -14,6 +14,20 @@ class Animal{
     }
 }
 
+class Ape extends Animal{
+    public $yell = "Auoo";
+    public function yell(){
+        echo $this->yell;
+    }
+}
+
+class Frog extends Animal{
+    public $jump = "hop hop";
+    public function jump(){
+        echo $this->jump;
+    }
+}
+
 $sheep = new Animal("shaun");
 echo $sheep->name; // "shaun"
 echo "<br>";
